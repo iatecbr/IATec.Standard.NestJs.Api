@@ -1,0 +1,17 @@
+{
+  "moduleFileExtensions": ["js", "json", "ts"],
+  "rootDir": ".",
+  "testEnvironment": "node",
+  "testRegex": ".e2e-spec.ts$",
+  "transform": {
+    "^.+\\.(t|j)s$": "ts-jest"
+  },
+  "moduleNameMapper": {
+    "^@domain/(.*)$": "<rootDir>/../src/domain/$1",
+    "^@application/(.*)$": "<rootDir>/../src/application/$1",
+    "^@persistence/(.*)$": "<rootDir>/../src/persistence/$1",
+    "^@anti-corruption/(.*)$": "<rootDir>/../src/anti-corruption/$1",
+    "^@cross-cutting/(.*)$": "<rootDir>/../src/cross-cutting/$1",
+    "^@message-queue/(.*)$": "<rootDir>/../src/message-queue/$1"
+  }
+}
